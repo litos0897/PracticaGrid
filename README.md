@@ -1,7 +1,7 @@
 # PGrid - Portfolio Personal
 
 ## 👤 Autor
-**Carlos Sánchez** (1º DAM)
+**Carlos Sánchez Criado** (1º DAM)
 
 ---
 
