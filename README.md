@@ -1,17 +1,19 @@
 # PGrid - Portfolio Personal
 
+[Web de prueba](https://practicagrid.pages.dev/).
+
 ## 👤 Autor
 **Carlos Sánchez Criado** (1º DAM)
 
 ---
 
 ## 📝 Descripción de la práctica
-Este proyecto consiste en una página web personal del tipo presentación interactiva. La estructura visual está organizada principalmente mediante un sistema de cuadrícula que distribuye la información en diferentes tarjetas (*cards*).
+Este proyecto consiste en una página web personal tipo portfolio o tarjeta de presentación interactiva. La estructura visual está organizada principalmente mediante un sistema de cuadrícula que distribuye la información en diferentes tarjetas (*cards*).
 
 El diseño está enfocado en destacar la identidad, visión y proyectos del autor, incluyendo:
 * Una sección de biografía y filosofía personal.
 * Un apartado de **Intereses** (Automovilismo, DJ, Fotografía).
-* La sección **Laboratorio**, que expone un proyecto destacado ("Hundir la flota" desarrollado en Java) con un enlace directo a su repositorio.
+* La sección **Laboratorio**, que expone un proyecto destacado: el juego clásico **"Hundir la flota"** desarrollado íntegramente en Java. Puedes ver el código fuente aquí: [Repositorio en GitHub](https://github.com/Ikeer3/hundirFlota).
 * Un diseño web adaptable (*Responsive Web Design*) que garantiza la correcta visualización en dispositivos de escritorio, tablets y teléfonos móviles.
 * Efectos interactivos (*hover*) en las tarjetas y botones para mejorar la experiencia de usuario.
 
@@ -24,4 +26,4 @@ El diseño está enfocado en destacar la identidad, visión y proyectos del auto
     * **Flexbox:** Para la alineación interna de elementos específicos (como la cabecera y la sección del laboratorio).
     * **Variables CSS (`:root`):** Para mantener una paleta de colores coherente y facilitar el mantenimiento (ej. `--accent-purple`, `--bg-body`).
     * **Anidamiento CSS (*Nesting*):** Para organizar de forma más limpia los selectores dependientes y estados como `:hover`.
-    * **Media Queries (`@media`):** Para la adaptabilidad a diferentes pantallas
+    * **Media Queries (`@media`):** Para la adaptabilidad a diferentes pantallas con puntos de ruptura en `1024px` y `600px`.
