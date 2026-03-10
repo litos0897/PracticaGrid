@@ -1,6 +1,6 @@
 # PGrid - Portfolio Personal
 
-[Web de prueba](https://practicagrid.pages.dev/).
+[Web de prueba](https://practicagrid.pages.dev/)
 
 ## 👤 Autor
 **Carlos Sánchez Criado** (1º DAM)
