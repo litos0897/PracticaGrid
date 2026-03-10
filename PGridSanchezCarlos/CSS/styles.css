@@ -1,0 +1,262 @@
+/* Definición de variables CSS para colores principales */
+:root {
+    --bg-body: #f4f2f8;
+    --accent-purple: #6366f1;
+    --text-main: #4a4a4a;
+    --card-white: #ffffff;
+    --grad-bio: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+/* Configuración general del documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-body);
+    background-image: url('../img/fondogeometrico.png');
+    background-repeat: repeat; 
+    background-attachment: fixed;
+    color: var(--text-main);
+    padding: 2rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Estilo del encabezado con línea divisoria */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #a78bfa;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--card-white);
+    padding: 1.5rem;
+    border-radius: 20px;
+    
+}
+
+/* Contenedor principal usando CSS GRID */
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Estilo base para todas las tarjetas */
+.card {
+    background-color: var(--card-white);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    
+    /* REQUISITO: Hover */
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+    }
+}
+
+/* Configuración específica para la tarjeta BIO (Azul) */
+.card.bio {
+    grid-column: span 2;
+    background: var(--grad-bio);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Anidamiento para la barra blanca decorativa */
+    .barraBlanca {
+        width: 100%;
+        height: 15px;
+        background: white;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.img-small, .img-wide {
+    padding: 0;
+}
+
+/* Posicionamiento de la imagen pequeña */
+.img-small {
+    grid-column: 3 / 4;
+}
+
+/* Posicionamiento de la sección intereses (columna derecha alta) */
+.intereses {
+    grid-column: 4 / 5;
+    grid-row: span 2; 
+}
+
+/* Posicionamiento de filosofía */
+.philosophy {
+    grid-column: 1 / 2;
+}
+
+/* Posicionamiento de la imagen ancha */
+.img-wide {
+    grid-column: 2 / 4;
+}
+
+
+/* Configuramos la tarjeta laboratorio como contenedor flex para separar títulos y proyecto */
+.card.laboratorio {
+    grid-column: span 4; 
+    padding: 2rem;       
+    display: flex;
+    align-items: center; 
+    background-color: var(--card-white);
+    border-radius: 20px;
+}
+
+/* Contenedor flex para distribuir el contenido horizontalmente */
+.laboratorio-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Estilos para el bloque de títulos (Izquierda) */
+.laboratorio-titles {
+    flex: 1; 
+    text-align: left; 
+    
+    /* REQUISITO: Anidamiento para la etiqueta pequeña (Laboratorio) */
+    .label {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: var(--accent-purple);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        display: block; 
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        color: #333;
+    }
+}
+
+/* Estilos para el bloque del proyecto (Derecha) */
+.laboratorio-project {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    text-align: right; 
+
+    p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #666;
+    }
+}
+
+/* Estilos para el botón GitHub con hover funcional */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0; 
+    color: var(--accent-purple);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    /* REQUISITO: Segundo uso de anidamiento para el estado hover */
+    &:hover {
+        background-color: var(--accent-purple);
+        color: white;
+        transform: translateY(-2px);
+    }
+}
+
+/* DISEÑO RESPONSIVE para tablet */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card.bio {
+        grid-column: span 2;
+    }
+    
+    .img-small {
+        grid-column: 1 / 2;
+    }
+    
+    .intereses {
+        grid-column: 2 / 3;
+        grid-row: span 1;
+    }
+    
+    .filosofia {
+        grid-column: 1 / 3;
+    }
+    
+    .img-wide {
+        grid-column: span 2;
+    }
+    
+    .card.laboratorio {
+        grid-column: span 2;
+    }
+}
+
+/* DISEÑO RESPONSIVE para móvil */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .card.bio,
+    .img-small,
+    .intereses,
+    .filosofia,
+    .img-wide,
+    .card.laboratorio {
+        grid-column: span 1;
+        
+    }
+    
+    .laboratorio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .laboratorio-titles {
+        text-align: center;
+        margin-bottom: 15px;
+       
+    }
+    
+    .laboratorio-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}
