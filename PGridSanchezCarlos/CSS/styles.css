@@ -75,14 +75,14 @@ body {
         border-radius: 4px;
     }
 }
-
+/* Ajusta las imágenes para que ocupen todo el contenedor de la tarjeta sin distorsionarse */
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
     display: block;
 }
-
+/* Elimina el padding interno en las tarjetas de imagen para que la foto llegue hasta los bordes */
 .img-small, .img-wide {
     padding: 0;
 }
