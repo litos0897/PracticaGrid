@@ -82,7 +82,7 @@ body {
     object-fit: cover; 
     display: block;
 }
-/* Elimina el padding interno en las tarjetas de imagen para que la foto llegue hasta los bordes */
+/* Elimina el padding interno en las tarjetas de imagen */
 .img-small, .img-wide {
     padding: 0;
 }
@@ -133,7 +133,7 @@ body {
     flex: 1; 
     text-align: left; 
     
-    /* REQUISITO: Anidamiento para la etiqueta pequeña (Laboratorio) */
+    /*Anidamiento para la etiqueta pequeña (Laboratorio) */
     .label {
         font-size: 0.8rem;
         font-weight: bold;
@@ -176,7 +176,7 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
 
-    /* REQUISITO: Segundo uso de anidamiento para el estado hover */
+    /* Segundo uso de anidamiento para el estado hover */
     &:hover {
         background-color: var(--accent-purple);
         color: white;
@@ -184,7 +184,7 @@ body {
     }
 }
 
-/* DISEÑO RESPONSIVE para tablet */
+/* Diseño responsive para tablet */
 @media (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -216,7 +216,7 @@ body {
     }
 }
 
-/* DISEÑO RESPONSIVE para móvil */
+/* Diseño rsponsive para móvil */
 @media (max-width: 600px) {
     body {
         padding: 1rem;
