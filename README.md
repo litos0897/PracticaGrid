@@ -13,7 +13,7 @@ Este proyecto consiste en una página web personal tipo portfolio o tarjeta de p
 El diseño está enfocado en destacar la identidad, visión y proyectos del autor, incluyendo:
 * Una sección de biografía y filosofía personal.
 * Un apartado de **Intereses** (Automovilismo, DJ, Fotografía).
-* La sección **Laboratorio**, que expone un proyecto destacado: el juego clásico **"Hundir la flota"** desarrollado íntegramente en Java. Puedes ver el código fuente aquí: [Hundir la flota](https://github.com/Ikeer3/hundirFlota).
+* La sección **Laboratorio**, que expone un proyecto destacado: el juego clásico **"Hundir la flota"** desarrollado íntegramente en Java. Puedes ver el código fuente aquí: [Hundir la flota](https://github.com/Ikeer3/hundirFlota)
 * Un diseño web adaptable (*Responsive Web Design*) que garantiza la correcta visualización en dispositivos de escritorio, tablets y teléfonos móviles.
 * Efectos interactivos (*hover*) en las tarjetas y botones para mejorar la experiencia de usuario.
 
